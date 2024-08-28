@@ -12,6 +12,15 @@ class UserEntity
 {
     use ArrayHelper;
 
+    const getId = 'id';
+    const getName = 'name';
+    const getEmail = 'email';
+    const getEmailVerifiedAt = 'email_verified_at';
+    const getPassword = 'password';
+    const getRememberToken = 'remember_token';
+    const getCreatedAt = 'created_at';
+    const getUpdatedAt = 'updated_at';
+
     #[OA\Property(property: 'id', description: 'ID', type: 'integer')]
     protected int $id;
 

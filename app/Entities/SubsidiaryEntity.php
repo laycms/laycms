@@ -12,6 +12,10 @@ class SubsidiaryEntity
 {
     use ArrayHelper;
 
+    const getId = 'id';
+    const getCreatedAt = 'created_at';
+    const getUpdatedAt = 'updated_at';
+
     #[OA\Property(property: 'id', description: 'ID', type: 'integer')]
     protected int $id;
 
